@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="highscores.html"><button class="scores-header" id="view-high-scores">View High Scores</button></a>
+        </div>
+    
+        <div class="timer">
+            <p>Time: 
+                <span id="timer">0</span>
+            </p>
+        </div>
+    </header>
+    
+    <main class="quiz">
+        <div class="card1">
+        <div id="quiz-start">
+            <div class="landing" id="start-screen">
+                <h1>Coding Quiz Challenge</h1>
+                <button class="btn btn-primary" id="start">Start Quiz</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="hide" id="questions">
+            <div class="card">
+            <h2 id="question-words"></h2>
+            <div class="options" id="theanswerchoices"></div>
+        </div>
+        </div>
+
+        <div class="hide" id="end-quiz">
+            <div class="card">
+            <h2>Done!</h2>
+            <p>Final score: <span id="final-score"></span></p>
+            <p>Enter initials: <input type="text" id="initials" max="3" />
+                <button id="submit-quiz">Submit</button>
+            </p>
+        </div>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div> 
+        <!-- what is this above here . did not change this in js -->
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+                <!-- <button type="button" id="answer0"> answer0 </button>
+                <button type="button" id="answer1"> answer1 </button>
+                <button type="button" id="answer2"> answer2 </button>
+                <button type="button" id="answer3"> answer3 </button> -->
